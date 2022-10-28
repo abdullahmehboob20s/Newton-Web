@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navbar-height: 96px;
+  }
+
+  * {
+    @apply text-white font-questrial;
+  }
+
+  body {
+    @apply bg-brand-1000 text-white;
+  }
+
+  .header {
+    @apply bg-[];
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1440px] mx-auto w-[80%];
+  }
+}
