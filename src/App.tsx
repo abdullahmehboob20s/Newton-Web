@@ -22,14 +22,14 @@ function App() {
           alt=""
         />
       </div>
-      <About />
+      {/* <About />
       <Unique />
       <RevivialOfAvalanche />
       <Levels />
       <TokenDistribution />
       <Charts />
       <TeamAndPartners />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
