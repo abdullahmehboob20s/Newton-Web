@@ -26,10 +26,10 @@ function App() {
       <Unique />
       <RevivialOfAvalanche />
       <Levels />
-      {/* <TokenDistribution />
+      <TokenDistribution />
       <Charts />
       <TeamAndPartners />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

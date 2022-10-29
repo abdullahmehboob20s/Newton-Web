@@ -3,10 +3,12 @@ import React from "react";
 
 function Team() {
   return (
-    <div className="py-10 px-20 bg-[rgba(0,0,0,.6)] shadow-[0_0_16px_rgba(0,0,0,.6)]">
-      <h1 className="mb-12 text-center text-3xl font-staatliches">CORE TEAM</h1>
+    <div className="py-10 px-8 sm:px-12 lg:px-20 bg-[rgba(0,0,0,.6)] shadow-[0_0_16px_rgba(0,0,0,.6)]">
+      <h1 className="mb-12 text-center text-xl xl:text-3xl font-staatliches">
+        CORE TEAM
+      </h1>
 
-      <div className="grid grid-cols-3 gap-y-12 gap-x-8">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-5 md:gap-x-8">
         <TeamCard
           img="images/member-1.png"
           title="Aurimas Barauskas"

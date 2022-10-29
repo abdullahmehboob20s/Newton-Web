@@ -40,7 +40,7 @@
   }
 
   .rounds-table th {
-    @apply text-2xl uppercase font-normal;
+    @apply text-lg xl:text-2xl uppercase font-normal;
   }
 
   .rounds-table td[data-side] {
@@ -48,7 +48,7 @@
   }
 
   .rounds-table td {
-    @apply text-xl bg-[#6D6D6D];
+    @apply text-sm xl:text-xl bg-[#6D6D6D];
   }
 }
 
