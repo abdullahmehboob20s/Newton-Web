@@ -23,10 +23,10 @@ function App() {
         />
       </div>
       <About />
-      {/* <Unique />
+      <Unique />
       <RevivialOfAvalanche />
       <Levels />
-      <TokenDistribution />
+      {/* <TokenDistribution />
       <Charts />
       <TeamAndPartners />
       <Footer /> */}

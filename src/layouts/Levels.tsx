@@ -1,32 +1,36 @@
 import RarityCard from "components/RarityCard";
+import useMediaQuery from "hooks/useMediaQuery";
 
 function Levels() {
+  const isAbove1024px = useMediaQuery("(min-width:1024px)");
+
   return (
-    <div className="py-100px bg-[rgba(0,0,0,.4)]">
+    <div className="py-16 md:py-100px bg-[rgba(0,0,0,.4)]">
       <div className="container">
-        <div className="flex items-center justify-between mb-8">
-          <p className="text-2xl text-secondary-1000 uppercase">
+        <div className="flex flex-col md:flex-row md:items-center space-y-6 md:space-y-0 justify-between mb-8">
+          <p className="text-base xl:text-2xl text-secondary-1000 uppercase">
             NFT RARITY PER CHARACTER
           </p>
 
-          <p className="text-right text-xl text-secondary-1000 font-medium">
+          <p className="text-right text-sm xl:text-xl text-secondary-1000 font-medium">
             1 character consists of 2500 NFTs
             <br />
             Total collection of 4 characters - 10,000 NFTs
           </p>
         </div>
 
-        <p className="text-xl font-medium text-white uppercase mb-6">
+        <p className="text-sm xl:text-xl font-medium text-white uppercase mb-6">
           VISUAL RARITY ACCUMULATES PER EACH LEVEL GOING UP
         </p>
 
-        <div className="grid grid-cols-4 gap-[2rem] items-stretch">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-[2rem] items-stretch">
           <RarityCard
             title="Level 1 - rookie"
             attribute="LOW"
             lineDirection="right"
             gap={"2rem"}
             variant={0}
+            showLine={isAbove1024px ? true : false}
             qualities={[
               "Various poses",
               "Crypto icons",
@@ -43,6 +47,7 @@ function Levels() {
             variant={1}
             lineDirection="full"
             gap={"2rem"}
+            showLine={isAbove1024px ? true : false}
             qualities={[
               "Weapons",
               "weapon colours",
@@ -58,6 +63,7 @@ function Levels() {
             lineDirection="left"
             gap={"2rem"}
             variant={1}
+            showLine={isAbove1024px ? true : false}
             qualities={[
               "Fighting poses",
               "additional props",
@@ -69,6 +75,7 @@ function Levels() {
             attribute="GOD MODE"
             attributeColor="#FCA945"
             variant={2}
+            showLine={isAbove1024px ? true : false}
             qualities={[
               "God mode",
               "Character defining attributes",
@@ -78,10 +85,12 @@ function Levels() {
           />
         </div>
 
-        <div className="grid grid-cols-4 gap-[2rem]">
+        <div className="lg:grid lg:grid-cols-4 lg:gap-[2rem] mt-10 lg:mt-0">
           <div className="col-span-3">
-            <div className="w-[2px] h-[60px] bg-white mx-auto"></div>
-            <p className="max-w-[249px] mx-auto py-3 border-2 border-white text-sm font-medium font-rajdhani text-center">
+            {isAbove1024px && (
+              <div className="w-[2px] h-[60px] bg-white mx-auto"></div>
+            )}
+            <p className="max-w-[249px] mx-auto py-3 border-2 border-white text-xs xl:text-sm font-medium font-rajdhani text-center">
               Turn static images in to 3D videos by achieving level 4 in the
               game.
             </p>

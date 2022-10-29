@@ -40,7 +40,9 @@ function RarityCard({
       <div
         className={`p-7 flex-1 flex flex-col border-1px ${variants[variant]}`}
       >
-        <h1 className="text-center font-eras-demi text-xl mb-4">{title}</h1>
+        <h1 className="text-center font-eras-demi text-sm xl:text-xl mb-4">
+          {title}
+        </h1>
 
         <ul className="space-y-1 mb-5 flex-1">
           {qualities.map((quality, index) => (
@@ -49,11 +51,11 @@ function RarityCard({
         </ul>
 
         <div className="text-center">
-          <p className="font-rajdhani text-lg text-secondary-1000">
+          <p className="font-rajdhani text-sm xl:text-lg text-secondary-1000">
             Stat attributes:
           </p>
           <p
-            className="text-2xl font-bold font-rajdhani"
+            className="text-base xl:text-2xl font-bold font-rajdhani"
             style={{ color: attributeColor }}
           >
             {attribute}

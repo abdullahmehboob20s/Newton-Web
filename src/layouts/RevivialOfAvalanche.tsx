@@ -5,21 +5,21 @@ import Video from "./Video";
 function RevivialOfAvalanche() {
   return (
     <div className="pb-100px">
-      <div className="py-150px relative">
+      <div className="pb-16 lg:py-150px flex flex-col items-center lg:block relative">
         <img
           src="images/wahmen.png"
-          className="absolute top-[43%] -translate-y-1/2 left-[4%] w-[40%] h-[90%] max-h-full object-contain"
+          className="lg:absolute top-[43%] lg:-translate-y-1/2 left-[4%] max-w-[16rem] lg:max-w-none w-full lg:w-[40%] h-[90%] max-h-full object-contain mb-8 lg:mb-0"
           alt=""
         />
 
-        <div className="container flex items-center justify-end">
+        <div className="container flex items-center justify-center lg:justify-end">
           <div className="relative flex flex-col items-center">
             <img
               src="images/logo-secondary.svg"
-              className="w-[100%] max-w-[640px]  mx-auto mb-6"
+              className="w-[100%] max-w-[300px] md:max-w-[400px] xl:max-w-[640px] mx-auto mb-3 lg:mb-6"
               alt=""
             />
-            <p className="text-xl max-w-[600px]  text-white opacity-90 text-center font-light">
+            <p className="text-sm xl:text-xl max-w-[500px] xl:max-w-[600px]  text-white opacity-90 text-center font-light">
               Is a unique fighting game on Avalanche(AVAX) blockchain which
               involves skill and planning to play. It is a game resembling
               Tekken, Street Fighter, and Mortal Kombat. The main difference,
@@ -32,7 +32,7 @@ function RevivialOfAvalanche() {
         </div>
       </div>
 
-      <div className="mb-20">
+      <div className="mb-12 lg:mb-20">
         <Stripe direction="left" />
       </div>
 
