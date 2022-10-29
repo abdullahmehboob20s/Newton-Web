@@ -22,8 +22,8 @@ function App() {
           alt=""
         />
       </div>
-      {/* <About />
-      <Unique />
+      <About />
+      {/* <Unique />
       <RevivialOfAvalanche />
       <Levels />
       <TokenDistribution />
