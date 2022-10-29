@@ -25,6 +25,27 @@
   .header {
     @apply bg-[];
   }
+
+  .rounds-table {
+    table-layout: fixed;
+  }
+
+  .rounds-table th,
+  .rounds-table td {
+    @apply font-staatliches text-white text-center py-3 px-4;
+  }
+
+  .rounds-table th {
+    @apply text-2xl uppercase font-normal;
+  }
+
+  .rounds-table td[data-side] {
+    @apply bg-[#494949] uppercase;
+  }
+
+  .rounds-table td {
+    @apply text-xl bg-[#6D6D6D];
+  }
 }
 
 @layer components {

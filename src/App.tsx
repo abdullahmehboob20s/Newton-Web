@@ -1,7 +1,10 @@
 import TokenDistribution from "components/TokenDistribution";
 import About from "layouts/About";
+import Charts from "layouts/Charts";
+import Footer from "layouts/Footer";
 import Levels from "layouts/Levels";
 import RevivialOfAvalanche from "layouts/RevivialOfAvalanche";
+import TeamAndPartners from "layouts/TeamAndPartners";
 import Unique from "layouts/Unique";
 import Hero from "./layouts/Hero";
 import Navbar from "./layouts/Navbar";
@@ -24,6 +27,9 @@ function App() {
       <RevivialOfAvalanche />
       <Levels />
       <TokenDistribution />
+      <Charts />
+      <TeamAndPartners />
+      <Footer />
     </div>
   );
 }
