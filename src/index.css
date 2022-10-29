@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "eras-demi";
+  src: url(../public/fonts/eras-demi-itc/ErasDemiITC.ttf);
+}
+
 @layer base {
   :root {
     --navbar-height: 96px;
@@ -25,5 +30,20 @@
 @layer components {
   .container {
     @apply max-w-[1440px] mx-auto w-[80%];
+  }
+  .container-2 {
+    @apply max-w-[1440px] mx-auto w-[70%];
+  }
+
+  .text-gradient {
+    background: linear-gradient(
+      90deg,
+      #ffffff 3.28%,
+      rgba(255, 255, 255, 0.81) 89.11%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 }

@@ -1,4 +1,6 @@
-import React from "react";
+import About from "layouts/About";
+import RevivialOfAvalanche from "layouts/RevivialOfAvalanche";
+import Unique from "layouts/Unique";
 import Hero from "./layouts/Hero";
 import Navbar from "./layouts/Navbar";
 
@@ -15,6 +17,9 @@ function App() {
           alt=""
         />
       </div>
+      <About />
+      <Unique />
+      <RevivialOfAvalanche />
     </div>
   );
 }

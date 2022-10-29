@@ -34,18 +34,22 @@ module.exports = {
     },
     fontFamily: {
       questrial: "'Questrial', sans-serif",
-    },
-    dropShadow: {
-      navLinks: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+      "eras-demi": "eras-demi",
     },
 
     extend: {
       spacing: {
         ofNavbarHeight: "var(--navbar-height)",
         "1px": "1px",
+        "100px": "100px",
+        "150px": "150px",
+        "200px": "200px",
       },
       borderWidth: {
         "1px": "1px",
+      },
+      dropShadow: {
+        navLinks: "0px 4px 4px rgba(0, 0, 0, 0.25)",
       },
     },
   },
