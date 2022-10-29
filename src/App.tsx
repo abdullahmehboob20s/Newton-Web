@@ -1,6 +1,7 @@
 import About from "layouts/About";
 import RevivialOfAvalanche from "layouts/RevivialOfAvalanche";
 import Unique from "layouts/Unique";
+import Video from "layouts/Video";
 import Hero from "./layouts/Hero";
 import Navbar from "./layouts/Navbar";
 
