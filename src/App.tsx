@@ -1,7 +1,8 @@
+import TokenDistribution from "components/TokenDistribution";
 import About from "layouts/About";
+import Levels from "layouts/Levels";
 import RevivialOfAvalanche from "layouts/RevivialOfAvalanche";
 import Unique from "layouts/Unique";
-import Video from "layouts/Video";
 import Hero from "./layouts/Hero";
 import Navbar from "./layouts/Navbar";
 
@@ -21,6 +22,8 @@ function App() {
       <About />
       <Unique />
       <RevivialOfAvalanche />
+      <Levels />
+      <TokenDistribution />
     </div>
   );
 }

@@ -35,6 +35,8 @@ module.exports = {
     fontFamily: {
       questrial: "'Questrial', sans-serif",
       "eras-demi": "eras-demi",
+      rajdhani: "'Rajdhani', sans-serif",
+      staatliches: "'Staatliches', cursive;",
     },
 
     extend: {
@@ -50,6 +52,14 @@ module.exports = {
       },
       dropShadow: {
         navLinks: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+      },
+      backgroundImage: {
+        rarity:
+          "linear-gradient(181.61deg, rgba(255, 255, 255, 0.05) 1.36%, rgba(255, 255, 255, 0) 218.8%)",
+        "rarity-active":
+          "linear-gradient(163.54deg, rgba(27, 146, 255, 0.05) 1.3%, rgba(255, 255, 255, 0.05) 97.64%)",
+        "rarity-orange":
+          "linear-gradient(136.06deg, rgba(222, 143, 49, 0.055) 0.34%, rgba(255, 138, 0, 0.045) 147.77%)",
       },
     },
   },
