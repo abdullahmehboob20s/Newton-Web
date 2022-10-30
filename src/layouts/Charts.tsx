@@ -1,3 +1,5 @@
+import Chart1 from "components/Chart1";
+
 const Points = ({ title, points }: { title: string; points: string[] }) => {
   return (
     <div className="max-w-[260px] w-full mx-auto">
@@ -19,13 +21,20 @@ const Points = ({ title, points }: { title: string; points: string[] }) => {
 function Charts() {
   return (
     <div className="py-16 lg:py-20 xl:py-100px bg-black">
-      <div className="container mb-20 lg:mb-150px">
+      <div className="container mb-20 lg:mb-150px space-y-14 md:space-y-20">
         <Points
           title="6% buy/sell tax:"
           points={["2% Liquidity", "3% USDC reflections", "1% Marketing"]}
         />
 
-        <div className="mb-12 lg:mb-100px"></div>
+        <div className="grid md:grid-cols-2 gap-10 md:gap-100px items-start">
+          <div className="w-full min-w-full">
+            <Chart1 />
+          </div>
+          <div className="w-full min-w-full">
+            <Chart1 />
+          </div>
+        </div>
 
         <Points
           title="locking periods:"
