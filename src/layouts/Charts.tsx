@@ -20,7 +20,7 @@ const Points = ({ title, points }: { title: string; points: string[] }) => {
 
 function Charts() {
   return (
-    <div className="py-16 lg:py-20 xl:py-100px bg-black">
+    <div className="py-16 lg:py-20 xl:py-100px bg-[#1C1C1C]">
       <div className="container mb-20 lg:mb-150px space-y-14 md:space-y-20">
         <Points
           title="6% buy/sell tax:"

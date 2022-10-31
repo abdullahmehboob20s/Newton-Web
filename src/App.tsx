@@ -25,8 +25,18 @@ function App() {
       <About />
       <Unique />
       <RevivialOfAvalanche />
-      <Levels />
-      <TokenDistribution />
+
+      <div className="relative">
+        <img
+          src="images/levels-bg.png"
+          className="absolute top-0 left-0 w-full h-full object-cover -z-20"
+          alt=""
+        />
+
+        <Levels />
+        <TokenDistribution />
+      </div>
+
       <Charts />
       <TeamAndPartners />
       <Footer />

@@ -1,14 +1,19 @@
 import Stripe from "components/Stripe";
-import React from "react";
 import Video from "./Video";
 
 function RevivialOfAvalanche() {
   return (
-    <div className="pb-100px">
+    <div className="pb-100px relative">
       <div className="pb-16 lg:py-150px flex flex-col items-center lg:block relative">
         <img
           src="images/wahmen.png"
           className="lg:absolute top-[43%] lg:-translate-y-1/2 left-[4%] max-w-[16rem] lg:max-w-none w-full lg:w-[40%] h-[90%] max-h-full object-contain mb-8 lg:mb-0"
+          alt=""
+        />
+
+        <img
+          src="images/back_image.png"
+          className="absolute top-1/2 left-0 -translate-y-1/2 w-full -z-20 h-full object-cover lg:h-auto"
           alt=""
         />
 
@@ -37,6 +42,12 @@ function RevivialOfAvalanche() {
       </div>
 
       <Video />
+
+      <img
+        src="images/jahanum.png"
+        className="absolute top-0 left-0 object-cover w-full h-full -z-20"
+        alt=""
+      />
     </div>
   );
 }

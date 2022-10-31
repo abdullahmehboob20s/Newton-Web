@@ -5,7 +5,7 @@ function Levels() {
   const isAbove1024px = useMediaQuery("(min-width:1024px)");
 
   return (
-    <div className="py-16 md:py-100px bg-[rgba(0,0,0,.4)]">
+    <div className="py-16 md:py-100px bg-[rgba(0,0,0,.5)]">
       <div className="container">
         <div className="flex flex-col md:flex-row md:items-center space-y-6 md:space-y-0 justify-between mb-8">
           <p className="text-base xl:text-2xl text-secondary-1000 uppercase">
